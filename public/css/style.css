@@ -1,0 +1,13 @@
+
+
+.main-header-box {
+    background-color: aqua;
+    padding: 10px 20px 10px 20px;
+    border: solid grey 1px;
+    margin: 0px 1px 0px 1px;
+}
+
+.row{
+    display: -webkit-flex;
+    display: flex;
+}
