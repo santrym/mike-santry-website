@@ -1,15 +1,23 @@
 <!DOCTYPE html>
+<html>
 <head>
 
-<title>mikesantry.com</title>
+<title>{{title}}</title>
 <link rel="stylesheet" href="/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-    {{>header}}
+    <div>{{>header}}</div>
 
-    <p>This is Mike Santry's website. There is sure to be content here soon, so be sure to refresh your browser every 5 <a href="https://supersecret-chat.herokuapp.com/">minutes</a></p>
+    <h3 class="mainBodyTitleDiv">{{title}}</h3>
+
+    {{>indexBody}}
 
 </body>
+
+</html>

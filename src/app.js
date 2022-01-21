@@ -23,8 +23,24 @@ app.use(express.static(pubDirPath));
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Mike Santry Website',
-        name: 'Mike Santry'
+        title: "Welcome to Mike Santry's Website",
+        pageBody: 'test'
+    });
+});
+
+app.get('/about', (req, res) => {
+    res.render('index', {
+        about: 'true',
+        title: 'About',
+        pageBody: 'About'
+    });
+});
+
+app.get('/premium', (req, res) => {
+    
+    console.log('in premium');
+    res.render('premium', {
+        title: 'Mike Santry Premium'
     });
 });
 

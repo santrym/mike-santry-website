@@ -1,13 +1,36 @@
 
 <header>
     
-<h2>Mike Santry's Website</h2>
 
-{{!-- <div class="row">
-    <div class="main-header-box">test1</div>
-    <div class="main-header-box">test2</div>
-    <div class="main-header-box">test3</div>
-</div> --}}
+
+ {{!-- <div id="top-menu">
+    <nav id="nav-flex">
+        <div class="navLinkDiv"><h2 id="mikeSantryHead">Mike Santry</h2></div>
+        <div class="navLinkDiv"><a href="/about">about</a></div>
+        <div class="navLinkDiv"><a href="/programming">programming</a></div>
+        <div class="navLinkDiv"><a href="/art">art</a></div>
+        <div class="navLinkDiv"><a href="/contact">contact</a></div>
+    </nav>
+
+ </div>    --}}
+
+ <div id="top-menu">
+    <nav id="nav-flex">
+        <div class="navLinkDiv"><h2 id="mikeSantryHead"><a href="/">Mike Santry</a></h2></div>
+        <div class="navLinkDiv">
+            {{#if about}}
+            <a href="/about" class="navLink"><b>about</b></a>
+            {{else}}
+            <a href="/about" class="navLink">about</a>
+            {{/if}}
+        </div>
+        <div class="navLinkDiv"><a href="/programming" class="navLink">programming</a></div>
+        <div class="navLinkDiv"><a href="/art" class="navLink">art</a></div>
+        <div class="navLinkDiv"><a href="/contact" class="navLink">contact</a></div>
+    </nav>
+
+ </div>  
+
 
 
 </header>

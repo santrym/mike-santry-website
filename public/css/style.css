@@ -1,5 +1,14 @@
 
 
+body{
+    margin: 0;
+}
+
+a {
+    color: beige;
+    text-decoration: none;
+}
+
 .main-header-box {
     background-color: aqua;
     padding: 10px 20px 10px 20px;
@@ -10,4 +19,44 @@
 .row{
     display: -webkit-flex;
     display: flex;
+}
+
+.navLink:hover {
+    color:aqua;
+}
+
+.navLinkDiv {
+    color: beige;
+    padding: 5px 15px;
+    border: 0px 3px;
+    margin: auto 0px;
+}
+
+.mainBodyTitleDiv {
+    margin: 20px;
+}
+
+.mainBodyDiv {
+    margin: 20px;
+}
+
+#top-menu{
+    background-color: rgb(76, 82, 72);
+    width: 100%;
+    /*display: block;*/
+    overflow: hidden; /* this was the one that made it fill the top portion of the nav */
+    font-family: 'Prompt', sans-serif;
+    padding-left: 20px;
+    color:beige;
+}
+
+#nav-flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#mikeSantryHead {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0px 40px 0px 20px;
 }
