@@ -29,12 +29,36 @@ app.get('', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    res.render('index', {
+    res.render('about', {
         about: 'true',
         title: 'About',
         pageBody: 'About'
     });
 });
+
+app.get('/programming', (req, res) => {
+    res.render('programming', {
+        programming: 'true',
+        title: "Programming",
+        pageBody: 'Programming'
+    });
+});
+
+app.get('/art', (req, res) => {
+    res.render('art', {
+        art: 'true',
+        title: 'Art',
+        pageBody: 'Art'
+    });
+});
+
+app.get('/contact', (req, res) => {
+    res.render('contact', {
+        contact: true,
+        title: "Contact",
+        pageBody: "Contact"
+    })
+})
 
 app.get('/premium', (req, res) => {
     

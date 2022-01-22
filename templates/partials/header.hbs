@@ -24,9 +24,28 @@
             <a href="/about" class="navLink">about</a>
             {{/if}}
         </div>
-        <div class="navLinkDiv"><a href="/programming" class="navLink">programming</a></div>
-        <div class="navLinkDiv"><a href="/art" class="navLink">art</a></div>
-        <div class="navLinkDiv"><a href="/contact" class="navLink">contact</a></div>
+        <div class="navLinkDiv">
+            {{#if programming}}
+            <a href="/programming" class="navLink"><b>programming</b></a>
+            {{else}}
+            <a href="/programming" class="navLink">programming</a>
+            {{/if}}
+            
+        </div>
+        <div class="navLinkDiv">
+            {{#if art}}
+            <a href="/art" class="navLink"><b>art</b></a>
+            {{else}}
+            <a href="/art" class="navLink">art</a>
+            {{/if}}
+        </div>
+        <div class="navLinkDiv">
+            {{#if contact}}
+            <a href="/contact" class="navLink"><b>contact</b></a>
+            {{else}}
+            <a href="/contact" class="navLink">contact</a>
+            {{/if}}
+        </div>
     </nav>
 
  </div>  
